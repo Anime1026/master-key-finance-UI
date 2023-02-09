@@ -1,0 +1,127 @@
+.bounty{
+    background: linear-gradient(#130933,#2b174c);
+    color: white;
+}
+
+.dashboard-container{
+    padding: 3rem 7rem 7rem 7rem;
+    text-align: left;
+}
+
+.bounty-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 30px;
+}
+
+.bounty-card{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.bounty-card-sup{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.bounty-card-sub{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #8883b8;
+}
+
+.bounty-amount{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.react-sweet-progress-line{
+    background-color: #14043c!important;
+}
+
+.react-sweet-progress-line-inner{
+    background-color: white!important;
+}
+
+.bounty-boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.bounty-box{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+}
+
+.currency{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.currency-icon{
+    width: 60px;
+    height: 60px;
+}
+
+.currency-name{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.swap{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.swap-icon{
+    width: 15px;
+}
+
+@media(max-width:1200px){
+    .bounty-box{
+        width: 100%;
+    }
+    .dashboard-container{
+        padding: 2rem 2rem 7rem 2rem!important;
+    }
+}
+
+@media(max-width:1000px){
+    .currency-icon{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 768px){
+    .bounty-cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bounty-card{
+        width: 100%;
+    }
+    .bounty-boxes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bounty-box{
+        width: 100%;
+        gap: 20px;
+    }
+    .currency-name{
+        font-size: 1.2rem
+    }
+}

@@ -1,0 +1,195 @@
+.dashboard{
+    background: linear-gradient(#130933,#2b174c);
+    color: white;
+}
+
+.dashboard-container{
+    padding: 3rem 7rem 7rem 7rem;
+    text-align: left;
+}
+
+.page-title{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+}
+.welcome{
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.dash-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    // background-color: #0e032b;
+    // padding: 3rem 5rem;
+    // border-radius: 10px;
+    width: 70%;
+    height: max-content;
+    margin-left: 15%;
+    margin-top: 30px;
+}
+
+.card-theme{
+    background-color: #0e032b;
+    padding: 3rem 20px;
+    border-radius: 10px;
+}
+
+.dash-card-sup{
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dash-card-sup-key{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.dash-card-sup-val{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.dash-infors{
+    font-size: 1rem;
+}
+
+.dash-card-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+}
+
+.buy-btn{
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    background-color: #6f5399;
+    width: 40%;
+    text-align: center;
+}
+
+.stake-btn{
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    border: 2px solid #6f5399;
+    background-color: transparent;
+    width: 40%;
+    color: #6f5399;
+    text-align: center;
+}
+
+.sub-title{
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.earning-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-top: 30px;
+}
+
+.earned-card{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.card-icon{
+    width: 30px;
+    height: 40px;
+}
+
+.earning-card-contents{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content-sup{
+    font-size: 1.5rem;
+}
+
+.card-content-sub{
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+}
+
+.contract-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%;
+    margin-top: 30px;
+}
+
+.contract-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+    gap: 50px;
+    padding: 25px 50px;
+}
+
+@media(max-width:1200px){
+    .earning-cards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .earned-card{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .contract-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(max-width:1000px){
+    .earned-card{
+        width: 100%;
+        margin-left: 0;
+    }
+    .dash-card{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .dashboard-container{
+        padding: 2rem 2rem 7rem 2rem;
+    }
+    .dash-card-btns{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .buy-btn{
+        width: 100%;
+    }
+    .stake-btn{
+        width: 100%;
+    }
+    .earned-card{
+        gap: 10px;
+    }
+    .contract-card{
+        gap: 15px;
+    }
+    .head{
+        padding: 0 2rem;
+    }
+}
